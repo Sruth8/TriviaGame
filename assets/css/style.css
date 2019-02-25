@@ -1,0 +1,18 @@
+body {
+ 
+    background-color: rgb(104, 165, 12) !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    height: 100%;
+    line-height: 150%;
+    color: black;
+
+}
+
+#title {
+  width: 500px;
+  height: 50px;
+  background-color: brown;
+  text-align: center;
+
+}
