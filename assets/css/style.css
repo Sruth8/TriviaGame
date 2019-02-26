@@ -16,3 +16,7 @@ body {
   text-align: center;
 
 }
+#runningTime {
+  text-align: center;
+  background-color: blue;
+}

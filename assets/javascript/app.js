@@ -1,9 +1,48 @@
 
 var time;
+var submitButton;
+var answerOne = $("#answer");
+var answer = $(answer.val();
 
 
 
 
+
+
+
+
+$("qOne").on("submit", function(event) {
+    event.preventDefault();
+
+}
+)
+
+
+
+
+
+
+
+
+//var qOne = [
+    //{
+     // value1: "What was Lt. Commandor Worf's sons name?",
+     // answers: {
+      //  a: "Worf Jr.",
+     //   b: "Alexander",
+     //   c: "Andrew",
+    //  },
+     // correctAnswer: "c"
+
+     // function buildQuiz(){}
+
+//function showResults(){}
+
+// display quiz right away
+//buildQuiz();
+
+// on submit, show results
+submitButton.addEventListener('click', showResults);
 
 
 
