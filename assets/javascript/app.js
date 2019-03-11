@@ -9,21 +9,21 @@ var missed = 0;
 
 var questions = [
     {
-        question: "Lt Commander Worf son named is Alexander?",
+        question: "Lt Commander Worfs son named is Alexander?",
         answers: ["true", "false"],
         correctAns: "true"
 
     },
 
     {
-        guestion: "Captin Pichard was never a Borg?",
+        question: "Captin Pichard was never a Borg?",
         answers: ["true", "false"],
         correctAns: "false"
 
     },
     {
         question: "Commandor Data has a borther named Lor?",
-        answer: ["true", "false"],
+        answers: ["true", "false"],
         correctAns: "true"
     }
 
@@ -50,9 +50,25 @@ function decrementTime() {
 
     }, 1 * 1000);
 }
+$(document).ready(function () {
+    //function startGame() {
+    // $("#startGame").hide();
+    // $("#endGame").show();
+     //decrementTime();
+
+    for (var i = 0; i < questions.length; i++) {
+        $("#questions").append("<h2>" + questions[i].question + "</h2>");
+        for (var a = 0; a < questions[i].answers.lenght; a++) {
+            $("#questions").append("<input type= 'radio' name-'question" + i + " 'value='" + questions[i].answers[a] + "'>'" + questions[i].answers[a]);
+        }
+
+    }
+
+
+});
 
 function endGame() {
-
+    clearInterval(timerId)
 }
 
 
@@ -60,6 +76,7 @@ $(document).ready(function () {
 
     $("#startGame").on("click", function () {
         console.log("start game")
+
         $("#startGame").hide();
         decrementTime();
 
@@ -68,7 +85,7 @@ $(document).ready(function () {
     $("#endGame").on("click", function () {
         endGame();
     })
-});
+})
 
 
 
