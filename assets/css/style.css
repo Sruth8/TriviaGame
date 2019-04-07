@@ -1,29 +1,54 @@
-body {
- 
-    background-color: rgb(104, 165, 12) !important;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    height: 100%;
-    line-height: 150%;
-    color: black;
-
+body{
+  background-image:url("https://cdn3.movieweb.com/i/article/ET6HGeQvzeC9UF4pcvzTJp2kb2Utf4/798:50/New-Star-Trek-Trilogy-Nicholas-Meyer-Legal-Battle.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif
 }
-
-#title {
-  width: 500px;
-  height: 50px;
-  background-color: brown;
+#container {
+  width: 50%;
+  background-color: rgb(54, 147, 179);
+  margin:20px auto;
+  overflow:auto;
+  padding-top:25px;
   text-align: center;
-
+  font-size: 14px;
+  opacity: 0.6;
+  border-radius: 25px;
+  font-weight: 600;
 }
-#runningTime {
-  text-align: center;
-  background-color: blue;
+header {
+
+  font-size: 20px;
+  font-weight: 1000;
 }
-
-/*#questions {
-  width: 500px;
-  height: 100px;
-background-color: rgb(145, 40, 127);
-
-}*/
+/* header h1{
+  margin:0;
+  padding:0;
+} */
+input[type="submit"]{
+  background-color:black;
+  color:white;
+  border: solid white 1px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+#Question {
+  font-weight: bold;
+  font-size: 18px;
+}
+#results h3{
+  background-color:rgb(25, 34, 160);
+  padding:10px;
+  margin:10px 0;
+  opacity: 0.8;
+  font-weight: bolder; 
+  font-size: 18px;
+  color: rgb(21, 129, 26)
+}
+#results span {
+  color: red;
+  font-weight:bolder;
+  font-size: 20px;
+}
