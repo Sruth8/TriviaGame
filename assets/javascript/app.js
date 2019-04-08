@@ -1,5 +1,5 @@
-var timer = 60;
-var timerId;
+// var startTime = 45;
+var time = 45;
 var NumQuestions = 5;
 var score = 0;
 var correctA = ["a", "b", "a", "a", "b"];
@@ -67,18 +67,21 @@ function yourAnswers() {
 
   // }
 
+  
 
-  // function startTime () {
-  //   time = time - 1;
-  //   if (time < 60) {
-  //     startTime.innerHTML = time;
-  //   }
-  //   if (time < 1) {
-  //     window.clearInterval(reset);
-  //   }
-  // }  
+  function startTime () {
+    time = time - 1;
+    if (time < 45) {
+      startTime.innerHTML = time;
+      console.log(startTime);
+    }
+    if (time < 1) {
+      window.clearInterval(reset);
+    }
+  }  
 
-  // reset = setInterval("startTime()", 1000);
+
+  reset = setInterval("startTime()", 600);
 
   // $("#startGame").click(function(){
   // //   
